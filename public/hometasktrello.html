@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="../src/styles/hometask.css">
+</head>
+<body>
+    <h1>Registration</h1>
+    <h3>Personal Details</h3>
+    <div class="form">
+        <form>
+            <div class="Full_Name">
+              <lable for="Full_Name">Full Name</lable> 
+              <input
+              type="text"
+              placeholder="enter the name"
+              required
+              maxlength="20"
+              pattern="[A-Za-z]"
+              aria-readonly="true"
+              /> 
+            </div>
+            <div class="Phone">
+                <lable for="Phone">Mobile phone</lable>
+                <input
+                type="number"
+                placeholder="enter the phone"
+                required
+                pattern="{8,14}"
+                aria-readonly="true"
+                
+                name="phone number"
+                />
+                <div class="dateofbirth">
+                    <label for="dateofbirth">Date of birth</label>
+                    <input
+                    type="date"
+                    required
+                    aria-readonly="true"
+                    />
+                </div>
+                <div class="Gender">
+                    <label for="Gender">Gender</label>
+                    <select name="Gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="email">
+                    <label for="email">email</label>
+                    <input
+                    type="email"
+                    name="email"
+                    required
+                    placeholder="Enter your email"
+                    />
+                </div>
+                <div class="Occupation">
+                    <label for="Occupation">Occupation</label>
+                    <input
+                    type="text"
+                    placeholder="Enetr your occupation"
+                    required
+                    name="Occupation"
+                    pattern="[A-Za-z]{3,20}"
+                    />
+                </div>
+                <h3>Identy Details</h3>
+                <div class="IDtype">
+                    <label for="IDtype">ID Type</label>
+                    <input
+                    type="text"
+                    placeholder="Inter your Id Type"
+                    required
+                    pattern="[A-Za-z]{1-100}"
+                    aria-readonly="true"
+                    />
+                </div>
+                <div class="Issue_date">
+                    <label for="Issue_date">Issue Date</label>
+                    <input
+                    type="date"
+                    required
+                    aria-readonly="true"
+                    
+                    />
+                </div>
+                <div class="Id_number">
+                    <lable for="Id_number">ID Number</lable>
+                    <input
+                    type="number"
+                    placeholder="Enter your ID number"
+                    required
+                    aria-readonly="true"
+                    maxlength="10"
+                    />
+                </div>
+                <div class="Issue_state">
+                    <label for="Issue_state">Issue State</label>
+                    <input
+                    type="text"
+                    placeholder="Enter ID issue state"
+                    maxlength="10"
+                    />
+                </div>
+                <div class="Issue_Authority">
+                    <lable for="Issue_Authority">Issue Authority</lable>
+                    <input
+                    type="text"
+                    placeholder="Enter issue department"
+                    pattern="[A-Za-z]{1-100}"
+                    required
+                    />
+                </div>
+                <div class="Expiry_Date">
+                    <lable for="Expiry_Date">Expiry Date</lable>
+                    <input
+                    type="date"
+                    required
+
+                    />
+                </div>
+
+            </div>
+            <button>Next</button>
+        </form>
+    </div>
+</body>
+</html>

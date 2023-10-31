@@ -1,0 +1,7 @@
+.form{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+form input:focus{
+    border: 1px solid coral;
+}
